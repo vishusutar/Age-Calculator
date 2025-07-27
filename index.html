@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Age Calculator By Vishal || Home</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<meta name="keywords" content="age calculator, date of birth to age, what is my age, birthday calculator, calculate age online, dob age finder, age in seconds, age gap calculator, free age tool">
+	<meta name="description" content="Use this free online Age Calculator to find your exact age in years, months, days, and even seconds. Perfect for school, jobs, documents, or fun!">
+</head>
+<body class="w-screen min-h-screen bg-[linear-gradient(135deg,#3b82f6,#14b8a6)] flex flex-col md:gap-5 justify-center items-center md:p-5">
+	<div class="w-full min-h-screen md:min-h-[auto] md:max-w-xl max-w-md md:rounded-2xl border bg-white p-6 flex flex-col md:flex-row justify-around md:justify-between gap-5 md:gap-0">
+		<div class="w-full border-b md:border-r md:border-b-0 flex flex-col gap-4 justify-center pl-0.5 pr-3 pb-3">
+			<h1 class="text-4xl md:text-3xl text-slate-900 font-bold">Age Calculator</h1>
+			<div class="w-full">
+				<h2 class="text-lg font-bold text-slate-600 mb-1">Date of Birth</h3>
+				<input id="from" type="date" class="w-full bg-white rounded-lg text-gray-600 placeholder-slate-600 p-4 md:p-2 border border-gray-300" placeholder="Date of Birth">
+			</div>
+			
+			<div class="w-full">
+				<h2 class="text-lg font-bold text-slate-600 mb-1">To Date</h3>
+				<input id="to" type="date" class="w-full bg-white rounded-lg text-gray-600 placeholder-slate-600 p-4 md:p-2 border border-gray-300" placeholder="To Date">
+			</div>
+			
+			<button id="calBtn" class="w-full p-4 md:p-3 rounded-3xl text-white font-bold bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg shadow-blue-500/50 md:hover:scale-90 active:scale-90 transition-all duration-300 backdrop-blue-md">Calculate Age</button>
+		</div>
+		
+		
+		<div class="w-full max-w-md mx-auto p-4 bg-white rounded-2xl shadow-lg">
+			<h3 class="text-xl text-slate-900 font-bold mb-4 text-center">Your Age</h1>
+
+			<!-- Result Grid -->
+			<div class="flex gap-4 justify-between px-4 text-center">
+				<div class="flex-1 border-r border-gray-300">
+					<span class="text-slate-600 text-sm">Years</span>
+					<div id="birY" class="text-slate-900 text-lg font-semibold">0</div>
+				</div>
+				<div class="flex-1 border-r border-gray-300">
+					<span class="text-slate-600 text-sm">Months</span>
+					<div id="birM" class="text-slate-900 text-lg font-semibold">0</div>
+				</div>
+				<div class="flex-1">
+					<span class="text-slate-600 text-sm">Days</span>
+					<div id="birD" class="text-slate-900 text-lg font-semibold">0</div>
+				</div>
+			</div>
+
+			<!-- Total Duration -->
+			<div class="mt-6 text-center">
+				<p class="text-slate-900 font-semibold mb-1">Total Duration</p>
+				<p id="TotalD" class="text-slate-700 text-sm"> ≈ 0 days • 0 hours • 0 minutes • 0 seconds ⏳</p>
+			</div>
+
+			<!-- Next Birthday -->
+			<h2 class="text-xl text-slate-900 font-bold mt-8 mb-4 text-center">Next Birthday</h1>
+			<div class="flex gap-4 justify-between px-4 text-center">
+				<div class="flex-1 border-r border-gray-300">
+					<span class="text-slate-600 text-sm">Years</span>
+					<div id="nextBirY" class="text-slate-900 text-lg font-semibold">0</div>
+				</div>
+				<div class="flex-1 border-r border-gray-300">
+					<span class="text-slate-600 text-sm">Months</span>
+					<div id="nextBirM" class="text-slate-900 text-lg font-semibold">0</div>
+				</div>
+				<div class="flex-1">
+					<span class="text-slate-600 text-sm">Days</span>
+					<div id="nextBirD" class="text-slate-900 text-lg font-semibold">0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w-full overflow-hidden md:max-w-xl max-w-md md:rounded-2xl border bg-white p-4">
+		<details open>
+			<summary>
+				<h1 class="text-xl text-slate-900 font-bold mb-4">🧠 About – Vishal’s Age Calculator</h1>
+			</summary>
+			
+				<div class="w-full">
+					<p class="text-sm">
+						The Age Calculator is a simple online tool that determines your precise age based on your date of birth (DOB). Whether you want to know your age in years, months, days, or even hours, minutes, and seconds, this calculator provides the most precise and immediate results.
+					</p>
+					<p class="text-sm">
+						It is useful for people of all ages, from students to professionals, and may be used in both official and informal settings.
+					</p>
+					
+				</div>
+				<div class="mt-4">
+					<h1 class="text-xl text-slate-900 font-bold mb-3">✅ What Makes an Age Calculator Useful?</h1>
+					<ul class="w-full decoration-1 pl-10 list-disc">
+						<li>For completing scholarship, college, or school applications</li>
+						<li>🛂 For official documents such as a passport, visa, or Aadhar card</li>
+						<li>🎂 to determine the number of days till your next birthday</li>
+						<li>👴🏻 For preparing a pension or retirement</li>
+						<li>💑 To determine the difference in age between two individuals</li>
+						<li>🧰 Find out how many seconds you are, just for fun!</li>
+					</ul>
+					
+					<a href="./privacy.html" class="block w-fit my-2 mx-auto underline decoration-blue-500 text-blue-500">Privacy Policy</a>
+				</div>
+			</div>
+			
+		</details>
+		
+	
+	<script src="./main.js"></script>
+</body>
+</html>
